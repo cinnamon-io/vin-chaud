@@ -5,5 +5,11 @@
     ],
     ["@babel/preset-react", {"runtime": "automatic"}],
     "@babel/typescript"
-  ]
+  ],
+  "env": {
+    "production": {
+      "plugins": ["@emotion"]
+    }
+  },
+  "plugins": ["@emotion"]
 }
