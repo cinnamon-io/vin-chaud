@@ -1,3 +1,5 @@
+// https://github.com/facebook/create-react-app/blob/main/packages/react-scripts/lib/react-app.d.ts
+
 declare namespace NodeJS {
   interface ProcessEnv {
     readonly NODE_ENV: 'development' | 'production' | 'test';
