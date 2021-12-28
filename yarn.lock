@@ -5694,6 +5694,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.4.1, chokidar@npm:^3.4.2, chokidar@npm:^3.5.2":
+  version: 3.5.2
+  resolution: "chokidar@npm:3.5.2"
+  dependencies:
+    anymatch: ~3.1.2
+    braces: ~3.0.2
+    fsevents: ~2.3.2
+    glob-parent: ~5.1.2
+    is-binary-path: ~2.1.0
+    is-glob: ~4.0.1
+    normalize-path: ~3.0.0
+    readdirp: ~3.6.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: d1fda32fcd67d9f6170a8468ad2630a3c6194949c9db3f6a91b16478c328b2800f433fb5d2592511b6cb145a47c013ea1cce60b432b1a001ae3ee978a8bffc2d
+  languageName: node
+  linkType: hard
+
 "chokidar@npm:^2.1.8":
   version: 2.1.8
   resolution: "chokidar@npm:2.1.8"
@@ -5714,25 +5733,6 @@ __metadata:
     fsevents:
       optional: true
   checksum: 0c43e89cbf0268ef1e1f41ce8ec5233c7ba022c6f3282c2ef6530e351d42396d389a1148c5a040f291cf1f4083a4c6b2f51dad3f31c726442ea9a337de316bcf
-  languageName: node
-  linkType: hard
-
-"chokidar@npm:^3.4.1, chokidar@npm:^3.4.2, chokidar@npm:^3.5.2":
-  version: 3.5.2
-  resolution: "chokidar@npm:3.5.2"
-  dependencies:
-    anymatch: ~3.1.2
-    braces: ~3.0.2
-    fsevents: ~2.3.2
-    glob-parent: ~5.1.2
-    is-binary-path: ~2.1.0
-    is-glob: ~4.0.1
-    normalize-path: ~3.0.0
-    readdirp: ~3.6.0
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  checksum: d1fda32fcd67d9f6170a8468ad2630a3c6194949c9db3f6a91b16478c328b2800f433fb5d2592511b6cb145a47c013ea1cce60b432b1a001ae3ee978a8bffc2d
   languageName: node
   linkType: hard
 
@@ -5789,6 +5789,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.8.0
     babel-loader: ^8.2.3
     clean-webpack-plugin: ^4.0.0
+    css-loader: ^6.5.1
     eslint: ^8.5.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
@@ -5800,7 +5801,10 @@ __metadata:
     react-dom: ^17.0.2
     react-router-dom: ^6.2.1
     rimraf: ^3.0.2
+    sass: ^1.45.1
+    sass-loader: ^12.4.0
     source-map-loader: ^3.0.0
+    style-loader: ^3.3.1
     ts-loader: ^9.2.6
     tsconfig-paths-webpack-plugin: ^3.5.2
     typescript: ^4.5.4
@@ -6477,6 +6481,24 @@ __metadata:
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
   checksum: a45d7ee8105eea7a76caa45286f4b31f9413520511ae99a78886c522305a94c8adf289951f989d239919a9ffc08ea8cac2bf9c362f21b65d6f54f6812e904cc0
+  languageName: node
+  linkType: hard
+
+"css-loader@npm:^6.5.1":
+  version: 6.5.1
+  resolution: "css-loader@npm:6.5.1"
+  dependencies:
+    icss-utils: ^5.1.0
+    postcss: ^8.2.15
+    postcss-modules-extract-imports: ^3.0.0
+    postcss-modules-local-by-default: ^4.0.0
+    postcss-modules-scope: ^3.0.0
+    postcss-modules-values: ^4.0.0
+    postcss-value-parser: ^4.1.0
+    semver: ^7.3.5
+  peerDependencies:
+    webpack: ^5.0.0
+  checksum: 5a3bedecb468038f09673d25c32d8db5b0baa6c38820253c54ce4c56c27a2250d5d5b4bace77dd5e20ba0a569604eb759362bab4e3128e7db2229e40857d4aca
   languageName: node
   linkType: hard
 
@@ -9187,6 +9209,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"icss-utils@npm:^5.0.0, icss-utils@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "icss-utils@npm:5.1.0"
+  peerDependencies:
+    postcss: ^8.1.0
+  checksum: 5c324d283552b1269cfc13a503aaaa172a280f914e5b81544f3803bc6f06a3b585fb79f66f7c771a2c052db7982c18bf92d001e3b47282e3abbbb4c4cc488d68
+  languageName: node
+  linkType: hard
+
 "ieee754@npm:^1.1.4":
   version: 1.2.1
   resolution: "ieee754@npm:1.2.1"
@@ -9219,6 +9250,13 @@ __metadata:
   version: 8.0.1
   resolution: "immer@npm:8.0.1"
   checksum: 63d875c04882b862481a0a692816e5982975a47a57619698bc1bb52963ad3b624911991708b2b81a7af6fdac15083d408e43932d83a6a61216e5a4503efd4095
+  languageName: node
+  linkType: hard
+
+"immutable@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "immutable@npm:4.0.0"
+  checksum: 4b5e9181e4d5fa06728a481835ec09c86367e5d03268666c95b522b7644ab891098022e4479a43c4c81a68f2ed82f10751ce5d33e208d7b873b6e7f9dfaf4d87
   languageName: node
   linkType: hard
 
@@ -11089,7 +11127,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.1.23":
+"nanoid@npm:^3.1.23, nanoid@npm:^3.1.30":
   version: 3.1.30
   resolution: "nanoid@npm:3.1.30"
   bin:
@@ -12121,6 +12159,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-modules-extract-imports@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "postcss-modules-extract-imports@npm:3.0.0"
+  peerDependencies:
+    postcss: ^8.1.0
+  checksum: 4b65f2f1382d89c4bc3c0a1bdc5942f52f3cb19c110c57bd591ffab3a5fee03fcf831604168205b0c1b631a3dce2255c70b61aaae3ef39d69cd7eb450c2552d2
+  languageName: node
+  linkType: hard
+
 "postcss-modules-local-by-default@npm:^3.0.2":
   version: 3.0.3
   resolution: "postcss-modules-local-by-default@npm:3.0.3"
@@ -12130,6 +12177,19 @@ __metadata:
     postcss-selector-parser: ^6.0.2
     postcss-value-parser: ^4.1.0
   checksum: 0267633eaf80e72a3abf391b6e34c5b344a1bdfb1421543d3ed43fc757e053e0fcc1a2eb06d959a8f435776e8dc80288b59bfc34d61e5e021d47b747c417c5a1
+  languageName: node
+  linkType: hard
+
+"postcss-modules-local-by-default@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "postcss-modules-local-by-default@npm:4.0.0"
+  dependencies:
+    icss-utils: ^5.0.0
+    postcss-selector-parser: ^6.0.2
+    postcss-value-parser: ^4.1.0
+  peerDependencies:
+    postcss: ^8.1.0
+  checksum: 6cf570badc7bc26c265e073f3ff9596b69bb954bc6ac9c5c1b8cba2995b80834226b60e0a3cbb87d5f399dbb52e6466bba8aa1d244f6218f99d834aec431a69d
   languageName: node
   linkType: hard
 
@@ -12143,6 +12203,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-modules-scope@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "postcss-modules-scope@npm:3.0.0"
+  dependencies:
+    postcss-selector-parser: ^6.0.4
+  peerDependencies:
+    postcss: ^8.1.0
+  checksum: 330b9398dbd44c992c92b0dc612c0626135e2cc840fee41841eb61247a6cfed95af2bd6f67ead9dd9d0bb41f5b0367129d93c6e434fa3e9c58ade391d9a5a138
+  languageName: node
+  linkType: hard
+
 "postcss-modules-values@npm:^3.0.0":
   version: 3.0.0
   resolution: "postcss-modules-values@npm:3.0.0"
@@ -12153,7 +12224,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-selector-parser@npm:^6.0.0, postcss-selector-parser@npm:^6.0.2":
+"postcss-modules-values@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "postcss-modules-values@npm:4.0.0"
+  dependencies:
+    icss-utils: ^5.0.0
+  peerDependencies:
+    postcss: ^8.1.0
+  checksum: f7f2cdf14a575b60e919ad5ea52fed48da46fe80db2733318d71d523fc87db66c835814940d7d05b5746b0426e44661c707f09bdb83592c16aea06e859409db6
+  languageName: node
+  linkType: hard
+
+"postcss-selector-parser@npm:^6.0.0, postcss-selector-parser@npm:^6.0.2, postcss-selector-parser@npm:^6.0.4":
   version: 6.0.8
   resolution: "postcss-selector-parser@npm:6.0.8"
   dependencies:
@@ -12177,6 +12259,17 @@ __metadata:
     picocolors: ^0.2.1
     source-map: ^0.6.1
   checksum: 4ac793f506c23259189064bdc921260d869a115a82b5e713973c5af8e94fbb5721a5cc3e1e26840500d7e1f1fa42a209747c5b1a151918a9bc11f0d7ed9048e3
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.2.15":
+  version: 8.4.5
+  resolution: "postcss@npm:8.4.5"
+  dependencies:
+    nanoid: ^3.1.30
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.1
+  checksum: b78abdd89c10f7b48f4bdcd376104a19d6e9c7495ab521729bdb3df315af6c211360e9f06887ad3bc0ab0f61a04b91d68ea11462997c79cced58b9ccd66fac07
   languageName: node
   linkType: hard
 
@@ -13457,6 +13550,41 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-loader@npm:^12.4.0":
+  version: 12.4.0
+  resolution: "sass-loader@npm:12.4.0"
+  dependencies:
+    klona: ^2.0.4
+    neo-async: ^2.6.2
+  peerDependencies:
+    fibers: ">= 3.1.0"
+    node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
+    sass: ^1.3.0
+    webpack: ^5.0.0
+  peerDependenciesMeta:
+    fibers:
+      optional: true
+    node-sass:
+      optional: true
+    sass:
+      optional: true
+  checksum: 0f7ca3633e7f61c412b0628766a9b57cb15f68def45e4303e68eb2f3a0722aec231956fbfd118489d93c997ab605470e89de8e3f7d6776830cc6366d9657d618
+  languageName: node
+  linkType: hard
+
+"sass@npm:^1.45.1":
+  version: 1.45.1
+  resolution: "sass@npm:1.45.1"
+  dependencies:
+    chokidar: ">=3.0.0 <4.0.0"
+    immutable: ^4.0.0
+    source-map-js: ">=0.6.2 <2.0.0"
+  bin:
+    sass: sass.js
+  checksum: 5c310b9d6260a304520678442f5814bd54c8068b659f54ae51ccb9156168811abf4e48eae4f857a5feb2958c4c07eacd5812e28018749ab25fdb40200c5bdd65
+  languageName: node
+  linkType: hard
+
 "scheduler@npm:^0.20.2":
   version: 0.20.2
   resolution: "scheduler@npm:0.20.2"
@@ -13902,6 +14030,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"source-map-js@npm:>=0.6.2 <2.0.0, source-map-js@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "source-map-js@npm:1.0.1"
+  checksum: 22606113d62bbd468712b0cb0c46e9a8629de7eb081049c62a04d977a211abafd7d61455617f8b78daba0b6c0c7e7c88f8c6b5aaeacffac0a6676ecf5caac5ce
+  languageName: node
+  linkType: hard
+
 "source-map-js@npm:^0.6.2":
   version: 0.6.2
   resolution: "source-map-js@npm:0.6.2"
@@ -14329,6 +14464,15 @@ __metadata:
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
   checksum: 1be9e8705307f5b8eb89e80f3703fa27296dccec349d790eace7aabe212f08c7c8f3ea6b6cb97bc53e82fbebfb9aa0689259671a8315f4655e24a850781e062a
+  languageName: node
+  linkType: hard
+
+"style-loader@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "style-loader@npm:3.3.1"
+  peerDependencies:
+    webpack: ^5.0.0
+  checksum: 470feef680f59e2fce4d6601b5c55b88c01ad8d1dd693c528ffd591ff5fd7c01a4eff3bdbe62f26f847d6bd2430c9ab594be23307cfe7a3446ab236683f0d066
   languageName: node
   linkType: hard
 
