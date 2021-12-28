@@ -28,11 +28,11 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|woff|woff2|ttf|svg|ico)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
       },
       {
         test: /\.css$/i,
