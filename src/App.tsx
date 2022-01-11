@@ -39,22 +39,7 @@ const SideLayout = () => {
     </>
   );
 };
-const RouteWithLayout = ({
-  path,
-  layout,
-  children,
-  ...rest
-}: {
-  path: string;
-  layout: React.ReactElement;
-  children: React.ReactNode;
-}) => {
-  return (
-    <Route path={path} element={layout} {...rest}>
-      {children}
-    </Route>
-  );
-};
+
 function App() {
   return (
     <>
@@ -69,7 +54,7 @@ function App() {
         </ul>
       </nav>
       <Routes>
-        <RouteWithLayout path="/" layout={<DefaultLayout />}>
+        <Route path="/" element={<DefaultLayout />}>
           <Route
             index
             element={
@@ -100,10 +85,10 @@ function App() {
               </>
             }
           />
-        </RouteWithLayout>
-        <RouteWithLayout path="detail" layout={<SideLayout />}>
+        </Route>
+        <Route path="detail" element={<SideLayout />}>
           <Route index element={<>상세</>} />
-        </RouteWithLayout>
+        </Route>
         <Route path="*" element={<>404</>} />
       </Routes>
     </>
